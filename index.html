@@ -1,242 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="2D5c-wKVQnALXrFIdo2wI-Y-DCOHoWiuO_FaM1N_N9Q" />
-<title>Rudy Luz Quispe Sucasaca | Estudiante de Contabilidad · UCSP</title>
-<meta name="description" content="Rudy Luz Quispe Sucasaca, estudiante de Contabilidad en la Universidad Católica San Pablo (Arequipa). Perfil, cursos, docentes y contacto.">
-<meta name="author" content="Rudy Luz Quispe Sucasaca">
-<meta name="theme-color" content="#e9f3ef">
-<link rel="canonical" href="https://rudyluzquispesucasaca.github.io/">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Rudy Luz Quispe Sucasaca | Estudiante de Contabilidad · UCSP">
-<meta property="og:description" content="Perfil, cursos, docentes y contacto.">
-<meta property="og:url" content="https://rudyluzquispesucasaca.github.io/">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Rudy Luz Quispe Sucasaca",
-  "url": "https://rudyluzquispesucasaca.github.io/",
-  "jobTitle": "Estudiante de Contabilidad",
-  "affiliation": { "@type": "CollegeOrUniversity", "name": "Universidad Católica San Pablo" },
-  "address": { "@type": "PostalAddress", "addressLocality": "Arequipa", "addressCountry": "PE" },
-  "sameAs": [
-    "https://github.com/RudyLuzQuispeSucasaca",
-    "https://www.linkedin.com/in/luz-quispe-94a934449"
-  ]
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudy Luz Quispe Sucasaca</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color:#e6f2ff;
+            font-family:Arial, sans-serif;
+            color:#1a3d5c;
+        }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        /* Encabezado con estrellas animadas */
+        header{
+            background:#2b78b8;
+            color:white;
+            text-align:center;
+            padding:30px 15px;
+            position:relative;
+            overflow:hidden;
+        }
+        .estrella{
+            position:absolute;
+            color:#ffdd44;
+            font-size:20px;
+            animation:brillar 1.5s infinite alternate;
+        }
+        @keyframes brillar{
+            0%{opacity:0.3; transform:scale(0.8)}
+            100%{opacity:1; transform:scale(1.2)}
+        }
 
-<style>
-:root{
-  --bg:#e9f3ef;        /* fondo general */
-  --surface:#ffffff;   /* tarjetas */
-  --ink:#10322b;       /* texto principal */
-  --muted:#4d6b63;     /* texto secundario */
-  --line:#c3dad2;      /* bordes */
-  --accent:#0f7a63;    /* botones y enlaces */
-  --accent-ink:#ffffff;
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#0c1d19; --surface:#122823; --ink:#e4f2ee; --muted:#93b3aa; --line:#23463d; --accent:#4fd1b0; --accent-ink:#06211a; }
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Work Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.7}
-a{color:var(--accent);font-weight:500}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.wrap{max-width:920px;margin:0 auto;padding:0 1.25rem}
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.15;margin:0}
+        /* Menú de navegación */
+        nav{
+            background:#ffffff;
+            box-shadow:0 2px 6px #b3d4eb;
+            padding:12px;
+            text-align:center;
+        }
+        nav a{
+            color:#2b78b8;
+            text-decoration:none;
+            font-weight:bold;
+            margin:0 12px;
+        }
+        nav a:hover{
+            color:#164b75;
+        }
 
-/* Barra superior */
-.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.75rem;padding-bottom:.75rem;flex-wrap:wrap}
-.logo{font-family:"Fraunces",serif;font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--ink)}
-.top nav{display:flex;flex-wrap:wrap;gap:1.1rem}
-.top nav a{text-decoration:none;color:var(--ink);font-size:.97rem}
-.top nav a:hover{color:var(--accent)}
+        .contenedor{
+            max-width:800px;
+            margin:30px auto;
+            padding:0 20px;
+        }
+        section{
+            background:white;
+            padding:25px;
+            border-radius:12px;
+            margin-bottom:20px;
+            box-shadow:0 3px 8px #c6e0f0;
+        }
+        h2{
+            color:#2b78b8;
+            margin-bottom:15px;
+        }
 
-/* Portada */
-.hero{padding:4rem 0 3rem}
-.role{color:var(--muted);margin:0 0 .75rem}
-h1{font-size:clamp(2.3rem,7vw,4.2rem);font-weight:700;letter-spacing:-.02em}
-.lead{font-size:1.25rem;color:var(--muted);margin:1rem 0 1.75rem;max-width:34rem}
-.btns{display:flex;flex-wrap:wrap;gap:.75rem}
-.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:999px;text-decoration:none;font-weight:600;border:2px solid var(--accent)}
-.btn.main{background:var(--accent);color:var(--accent-ink)}
-.btn.alt{color:var(--accent)}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin-top:2.5rem;padding:0;list-style:none}
-.facts li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem}
-.facts span{display:block;color:var(--muted);font-size:.88rem}
-.facts strong{font-weight:600}
+        /* Imagen animada de la chica */
+        .chica-animada{
+            width:180px;
+            display:block;
+            margin:15px auto;
+            animation:salto 1.2s infinite alternate;
+        }
+        @keyframes salto{
+            0%{transform:translateY(0px)}
+            100%{transform:translateY(-12px)}
+        }
 
-section{padding:3rem 0;border-top:1px solid var(--line)}
-h2{font-size:1.9rem;margin-bottom:.4rem}
-.intro{color:var(--muted);margin:0 0 1.5rem}
-blockquote{margin:0 0 1.5rem;padding-left:1rem;border-left:4px solid var(--accent);font-family:"Fraunces",serif;font-size:1.3rem}
-.about p{max-width:42rem}
+        .curso{
+            background:#f0f7ff;
+            padding:12px;
+            margin:10px 0;
+            border-left:4px solid #2b78b8;
+            border-radius:6px;
+        }
+        a{
+            color:#2b78b8;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
 
-/* Fortalezas y cursos */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.2rem}
-.card h3{font-size:1.2rem;margin-bottom:.4rem}
-.card p{margin:.25rem 0}
-.card .role-tag{color:var(--muted);font-size:.9rem}
-
-/* Compañeros */
-ul.mates{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.75rem}
-ul.mates li a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.9rem 1.1rem;text-decoration:none;color:var(--ink)}
-ul.mates li a:hover{border-color:var(--accent);color:var(--accent)}
-
-footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
-</style>
+        footer{
+            text-align:center;
+            padding:20px;
+            color:#447799;
+        }
+    </style>
 </head>
+<body>
 
-<body id="inicio">
-
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="#inicio">RQ</a>
-    <nav aria-label="Secciones">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#fortalezas">Fortalezas</a>
-      <a href="#cursos">Cursos</a>
-      <a href="#companeros">Compañeros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
+<header>
+    <span class="estrella" style="top:10%; left:8%">★</span>
+    <span class="estrella" style="top:20%; left:25%">★</span>
+    <span class="estrella" style="top:8%; left:50%">★</span>
+    <span class="estrella" style="top:22%; left:70%">★</span>
+    <span class="estrella" style="top:12%; left:90%">★</span>
+    <h1>✨ Rudy Luz Quispe Sucasaca ✨</h1>
+    <p>Estudiante de Contabilidad</p>
 </header>
 
-<main class="wrap">
+<nav>
+    <a href="#sobre-mi">Sobre Mí</a>
+    <a href="#cursos">Cursos y Profesores</a>
+    <a href="#compañeros">Compañeros</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-  <section class="hero" style="border-top:0">
-    <p class="role">Estudiante de Contabilidad · UCSP</p>
-    <h1>Rudy Luz Quispe Sucasaca</h1>
-    <p class="lead">Responsable, empático y con muchas ganas de construir un mejor futuro.</p>
-    <div class="btns">
-      <a class="btn main" href="https://www.linkedin.com/in/luz-quispe-94a934449" target="_blank" rel="me noopener">Mi LinkedIn</a>
-      <a class="btn alt" href="https://github.com/RudyLuzQuispeSucasaca" target="_blank" rel="me noopener">Mi GitHub</a>
-    </div>
-    <ul class="facts">
-      <li><span>Carrera</span><strong>Contabilidad</strong></li>
-      <li><span>Universidad</span><strong>Católica San Pablo</strong></li>
-      <li><span>Ciudad</span><strong>Arequipa, Perú</strong></li>
-      <li><span>Etapa</span><strong>Tercer semestre</strong></li>
-    </ul>
-  </section>
+<div class="contenedor">
+    <section id="sobre-mi">
+        <h2>👤 Sobre Mí</h2>
+        <img class="chica-animada" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="chica estudiante">
+        <p>Soy una estudiante comprometida, responsable y organizada. Tengo mucho interés en aprender y desarrollar mis conocimientos en el área de Contabilidad.</p>
+        <br>
+        <p>💼 <strong>Mi LinkedIn:</strong> <a href="AQUÍ-TU-ENLACE-LINKEDIN" target="_blank">Rudy Luz Quispe Sucasaca</a></p>
+    </section>
 
-  <section id="sobre-mi" class="about">
-    <h2>Sobre mí</h2>
-    <p class="intro">Quién soy y hacia dónde voy.</p>
-    <blockquote>Le pongo muchas ganas a todo lo que hago.</blockquote>
-    <p>Soy Rudy Luz Quispe Sucasaca, tengo 22 años y soy estudiante de tercer semestre de Contabilidad en la Universidad Católica San Pablo (UCSP), en Arequipa. Además de mis estudios universitarios, tengo formación en panadería y repostería, y en informática contable en INFOUNSA.</p>
-    <p>Soy una persona responsable, amable, empática, alegre y respetuosa. Me gusta poner entusiasmo en cada tarea y tratar a los demás con calidez, porque creo que un buen ambiente de trabajo ayuda a lograr mejores resultados.</p>
-    <p>A futuro quiero crear mi propia empresa e impulsar proyectos de ayuda social que contribuyan a la sociedad y a construir un mejor futuro. También sueño con recorrer distintos rincones de mi país y conocer el mundo.</p>
-  </section>
+    <section id="cursos">
+        <h2>📚 Mis 7 Cursos y Profesores</h2>
 
-  <section id="fortalezas">
-    <h2>Mis fortalezas</h2>
-    <p class="intro">Lo que aporto a un equipo de trabajo.</p>
-    <div class="grid">
-      <div class="card"><h3>Responsabilidad</h3><p>Cumplo con mis compromisos y cuido los detalles de cada trabajo.</p></div>
-      <div class="card"><h3>Amabilidad y empatía</h3><p>Escucho, comprendo a los demás y busco apoyar a quienes me rodean.</p></div>
-      <div class="card"><h3>Alegría y entusiasmo</h3><p>Le pongo muchas ganas a lo que hago y contagio buena energía al equipo.</p></div>
-      <div class="card"><h3>Respeto</h3><p>Valoro a cada persona y trabajo con honestidad y buen trato.</p></div>
-      <div class="card"><h3>Formación práctica</h3><p>Panadería y repostería, e informática contable en INFOUNSA.</p></div>
-    </div>
-  </section>
+        <div class="curso">
+            <strong>1. Contabilidad 3</strong>
+            <p>Profesora: Giovanna M. García Jarufe</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESORA1" target="_blank">Perfil</a></p>
+        </div>
 
-  <section id="cursos">
-    <h2>Mis cursos y docentes</h2>
-    <p class="intro">Semestre 2026-II. Cada docente enlaza a su perfil de LinkedIn.</p>
-    <div class="grid">
+        <div class="curso">
+            <strong>2. Introducción a la Computación</strong>
+            <p>Profesor: Ernesto Cuadros Vargas</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESOR2" target="_blank">Perfil</a></p>
+        </div>
 
-      <div class="card">
-        <h3>Cálculo en una Variable</h3>
-        <p><a href="https://www.linkedin.com/in/jesus-enrique-achire-quispe-a842303b6/" target="_blank" rel="noopener">Jesús Enrique Achire Quispe</a></p>
-      </div>
+        <div class="curso">
+            <strong>3. Liderazgo</strong>
+            <p>Profesora: Claudia Calisaya Carpio</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESORA3" target="_blank">Perfil</a></p>
+        </div>
 
-      <div class="card">
-        <h3>Liderazgo</h3>
-        <p><a href="https://www.linkedin.com/in/claudia-calisaya-carpio-5821a0173/" target="_blank" rel="noopener">Claudia Calisaya Carpio</a></p>
-      </div>
+        <div class="curso">
+            <strong>4. Nombre del curso 4</strong>
+            <p>Profesor/a: Nombre del docente</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESOR4" target="_blank">Perfil</a></p>
+        </div>
 
-      <div class="card">
-        <h3>Antropología</h3>
-        <p>José Luis Begazo de la Torre</p>
-        <!-- Si encuentras su LinkedIn, reemplaza la línea anterior por:
-        <p><a href="https://www.linkedin.com/in/SU-PERFIL" target="_blank" rel="noopener">José Luis Begazo de la Torre</a></p> -->
-      </div>
+        <div class="curso">
+            <strong>5. Nombre del curso 5</strong>
+            <p>Profesor/a: Nombre del docente</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESOR5" target="_blank">Perfil</a></p>
+        </div>
 
-      <div class="card">
-        <h3>Historia de Occidente I</h3>
-        <p>Gonzalo José Pedro Presbítero Rodríguez</p>
-      </div>
+        <div class="curso">
+            <strong>6. Nombre del curso 6</strong>
+            <p>Profesor/a: Nombre del docente</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESOR6" target="_blank">Perfil</a></p>
+        </div>
 
-      <div class="card">
-        <h3>Introducción a Computación</h3>
-        <p><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank" rel="noopener">Ernesto Cuadros Vargas</a></p>
-        <p class="role-tag">Asistente: <a href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638/" target="_blank" rel="noopener">Rosmery Violeta Quispe Zavala</a></p>
-      </div>
+        <div class="curso">
+            <strong>7. Nombre del curso 7</strong>
+            <p>Profesor/a: Nombre del docente</p>
+            <p>💼 LinkedIn: <a href="ENLACE-PROFESOR7" target="_blank">Perfil</a></p>
+        </div>
+    </section>
 
-      <div class="card">
-        <h3>Contabilidad III</h3>
-        <p><a href="https://www.linkedin.com/in/giovanna-m-garc%C3%ADa-jarufe/" target="_blank" rel="noopener">Giovanna María García Jarufe</a></p>
-      </div>
+    <section id="compañeros">
+        <h2>👥 Páginas de mis 5 compañeros</h2>
+        <p>🔗 <a href="ENLACE-COMPAÑERO1" target="_blank">Compañero 1</a></p>
+        <p>🔗 <a href="ENLACE-COMPAÑERO2" target="_blank">Compañero 2</a></p>
+        <p>🔗 <a href="ENLACE-COMPAÑERO3" target="_blank">Compañero 3</a></p>
+        <p>🔗 <a href="ENLACE-COMPAÑERO4" target="_blank">Compañero 4</a></p>
+        <p>🔗 <a href="ENLACE-COMPAÑERO5" target="_blank">Compañero 5</a></p>
+    </section>
 
-      <div class="card">
-        <h3>Legislación Laboral</h3>
-        <p><a href="https://www.linkedin.com/in/giovanna-m-garc%C3%ADa-jarufe/" target="_blank" rel="noopener">Giovanna María García Jarufe</a></p>
-        <p><a href="https://www.linkedin.com/in/carlos-abarca-rubianes-b2242a35/" target="_blank" rel="noopener">Carlos Rodrigo Abarca Rubianes</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Filosofía de la Naturaleza</h3>
-        <p><a href="https://www.linkedin.com/in/david-matto-neyra-2773a73a7/" target="_blank" rel="noopener">David Luis Matto Neyra</a></p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="companeros">
-    <h2>Páginas de mis compañeros</h2>
-    <p class="intro">Una red que crece: aquí enlazo las páginas web de mis compañeros de clase.</p>
-
-    <ul class="mates">
-      <li><a href="https://raquelnoemivelasquezyucra-code.github.io/" target="_blank" rel="noopener">Raquel Noemi Velasquez Yucra</a></li>
-
-      <!-- ================================================
-           PARA AGREGAR UN COMPAÑERO:
-           1) Copia la línea de abajo (sin los signos de comentario)
-           2) Pégala debajo de la última, antes de </ul>
-           3) Cambia el link y el nombre
-      <li><a href="https://USUARIO.github.io/" target="_blank" rel="noopener">Nombre del compañero</a></li>
-           ================================================ -->
-
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Conectemos</h2>
-    <p class="intro">Escríbeme o agrégame en LinkedIn para estar en contacto.</p>
-    <div class="btns">
-      <a class="btn main" href="https://www.linkedin.com/in/luz-quispe-94a934449" target="_blank" rel="me noopener">Escríbeme en LinkedIn</a>
-      <a class="btn alt" href="https://www.linkedin.com/in/luz-quispe-94a934449" target="_blank" rel="me noopener">Agregarme en LinkedIn</a>
-      <a class="btn alt" href="https://github.com/RudyLuzQuispeSucasaca" target="_blank" rel="me noopener">Ver mi GitHub</a>
-    </div>
-    <p class="intro" style="margin-top:1rem">Mi LinkedIn: <a href="https://www.linkedin.com/in/luz-quispe-94a934449" target="_blank" rel="me noopener">linkedin.com/in/luz-quispe-94a934449</a></p>
-  </section>
-
-</main>
+    <section id="contacto">
+        <h2>📩 Contacto</h2>
+        <p>📧 Correo: shadylidialpz1@gmail.com</p>
+        <p>📍 Ubicación: Arequipa, Perú</p>
+        <p>💼 LinkedIn: <a href="AQUÍ-TU-ENLACE-LINKEDIN" target="_blank">Shady Lidia Lopez Hachata</a></p>
+    </section>
+</div>
 
 <footer>
-  <div class="wrap">© 2026 Rudy Luz Quispe Sucasaca · Universidad Católica San Pablo, Arequipa</div>
+    © 2026 Rudy Luz Quispe Sucasaca💙
 </footer>
 
 </body>
